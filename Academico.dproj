@@ -1,0 +1,234 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectGuid>{394a75c7-e3c9-4d22-990d-35a98053bfb2}</ProjectGuid>
+    <MainSource>Academico.dpr</MainSource>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <DCC_DCCCompiler>DCC32</DCC_DCCCompiler>
+    <DCC_DependencyCheckOutputName>Academico.exe</DCC_DependencyCheckOutputName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_DebugInformation>False</DCC_DebugInformation>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_LocalDebugSymbols>False</DCC_LocalDebugSymbols>
+    <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+    <DCC_Define>RELEASE</DCC_Define>
+    <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+    <DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+    <DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <Version>7.0</Version>
+    <DCC_WriteableConstants>True</DCC_WriteableConstants>
+    <DCC_Define>DEBUG</DCC_Define>
+    <DCC_UNSAFE_TYPE>True</DCC_UNSAFE_TYPE>
+    <DCC_UNSAFE_CODE>True</DCC_UNSAFE_CODE>
+    <DCC_UNSAFE_CAST>True</DCC_UNSAFE_CAST>
+  </PropertyGroup>
+  <ProjectExtensions>
+    <Borland.Personality>Delphi.Personality</Borland.Personality>
+    <Borland.ProjectType>VCLApplication</Borland.ProjectType>
+    <BorlandProject>
+<BorlandProject xmlns=""> <Delphi.Personality>   <Parameters>
+      <Parameters Name="UseLauncher">False</Parameters>
+      <Parameters Name="LoadAllSymbols">True</Parameters>
+      <Parameters Name="LoadUnspecifiedSymbols">False</Parameters>
+    </Parameters>
+    <VersionInfo>
+      <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+      <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+      <VersionInfo Name="MajorVer">1</VersionInfo>
+      <VersionInfo Name="MinorVer">0</VersionInfo>
+      <VersionInfo Name="Release">0</VersionInfo>
+      <VersionInfo Name="Build">0</VersionInfo>
+      <VersionInfo Name="Debug">False</VersionInfo>
+      <VersionInfo Name="PreRelease">False</VersionInfo>
+      <VersionInfo Name="Special">False</VersionInfo>
+      <VersionInfo Name="Private">False</VersionInfo>
+      <VersionInfo Name="DLL">False</VersionInfo>
+      <VersionInfo Name="Locale">1046</VersionInfo>
+      <VersionInfo Name="CodePage">1252</VersionInfo>
+    </VersionInfo>
+    <VersionInfoKeys>
+      <VersionInfoKeys Name="CompanyName"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileDescription"></VersionInfoKeys>
+      <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="InternalName"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalCopyright"></VersionInfoKeys>
+      <VersionInfoKeys Name="LegalTrademarks"></VersionInfoKeys>
+      <VersionInfoKeys Name="OriginalFilename"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductName"></VersionInfoKeys>
+      <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+      <VersionInfoKeys Name="Comments"></VersionInfoKeys>
+    </VersionInfoKeys>
+    <Source>
+      <Source Name="MainSource">Academico.dpr</Source>
+    </Source>
+  </Delphi.Personality> </BorlandProject></BorlandProject>
+  </ProjectExtensions>
+  <ItemGroup />
+  <ItemGroup>
+    <DelphiCompile Include="Academico.dpr">
+      <MainSource>MainSource</MainSource>
+    </DelphiCompile>
+    <DCCReference Include="U_AlunosPorSerie.pas">
+      <Form>Frm_AlunosPorSerie</Form>
+    </DCCReference>
+    <DCCReference Include="U_ApagaMensalidade.pas">
+      <Form>Frm_ApagaMensalidade</Form>
+    </DCCReference>
+    <DCCReference Include="U_BaixaMensalidade.pas">
+      <Form>Frm_BaixaMensalidade</Form>
+    </DCCReference>
+    <DCCReference Include="U_BaixaMensalidadeGeral.pas">
+      <Form>Frm_BaixaMensalidadeGeral</Form>
+    </DCCReference>
+    <DCCReference Include="U_BoletimAlternadoConceito.pas">
+      <Form>Frm_BoletimAlternadoConceito</Form>
+    </DCCReference>
+    <DCCReference Include="U_BoletimAlternadoNota.pas">
+      <Form>Frm_BoletimAlternadoNota</Form>
+    </DCCReference>
+    <DCCReference Include="U_BoletoAlternado.pas">
+      <Form>Frm_BoletoAlternado</Form>
+    </DCCReference>
+    <DCCReference Include="U_Calendario.pas">
+      <Form>Frm_Calendario</Form>
+    </DCCReference>
+    <DCCReference Include="U_CdDicente.pas">
+      <Form>Frm_CdDicente</Form>
+    </DCCReference>
+    <DCCReference Include="U_CdFuncionario.pas">
+      <Form>Frm_CdFuncionario</Form>
+    </DCCReference>
+    <DCCReference Include="U_EditaGerenciamentoAluno.pas">
+      <Form>Frm_EditaGerenciamentoAluno</Form>
+    </DCCReference>
+    <DCCReference Include="U_EditaGerenciamentoAlunoC.pas">
+      <Form>Frm_EditaGerenciamentoAlunoC</Form>
+    </DCCReference>
+    <DCCReference Include="U_EditaMensalidade.pas">
+      <Form>Frm_EditaMensalidade</Form>
+    </DCCReference>
+    <DCCReference Include="U_FiltData.pas">
+      <Form>Frm_FiltData</Form>
+    </DCCReference>
+    <DCCReference Include="U_FiltMes.pas">
+      <Form>Frm_FiltMes</Form>
+    </DCCReference>
+    <DCCReference Include="U_FiltMesAno.pas">
+      <Form>Frm_FiltMesAno</Form>
+    </DCCReference>
+    <DCCReference Include="U_FiltroGerenciamentoAluno.pas">
+      <Form>Frm_FiltroGerenciamentoAluno</Form>
+    </DCCReference>
+    <DCCReference Include="U_Funcoes.pas" />
+    <DCCReference Include="U_GerenciaAluno.pas">
+      <Form>Frm_GerenciaAluno</Form>
+    </DCCReference>
+    <DCCReference Include="U_GerenciaAlunoConceito.pas">
+      <Form>Frm_GerenciaAlunoConceito</Form>
+    </DCCReference>
+    <DCCReference Include="U_GravaCopia.pas">
+      <Form>Frm_GravaCopia</Form>
+    </DCCReference>
+    <DCCReference Include="U_Login.pas">
+      <Form>Frm_Login</Form>
+    </DCCReference>
+    <DCCReference Include="U_Mensalidade.pas">
+      <Form>Frm_Mensalidade</Form>
+    </DCCReference>
+    <DCCReference Include="U_MensalidadePorSerie.pas">
+      <Form>Frm_MensalidadePorSerie</Form>
+    </DCCReference>
+    <DCCReference Include="U_MODULO.PAS">
+      <Form>Frm_Modulo</Form>
+    </DCCReference>
+    <DCCReference Include="U_PedeSenha.pas">
+      <Form>Frm_PedeSenha</Form>
+    </DCCReference>
+    <DCCReference Include="U_PedeSenhaFuncUsua.pas">
+      <Form>Frm_PedeSenhaFuncUsua</Form>
+    </DCCReference>
+    <DCCReference Include="U_PesqIncremento.pas">
+      <Form>Frm_PesqIncremento</Form>
+    </DCCReference>
+    <DCCReference Include="U_Principal.pas">
+      <Form>Frm_principal</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu001.pas">
+      <Form>Qrp_RelAlu001</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu002.pas">
+      <Form>Qrp_RelAlu002</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu003.pas">
+      <Form>Qrp_RelAlu003</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu004.pas">
+      <Form>Qrp_RelAlu004</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu005.pas">
+      <Form>Qrp_RelAlu005</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu006.pas">
+      <Form>Qrp_RelAlu006</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu007.pas">
+      <Form>Qrp_RelAlu007</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu008.pas">
+      <Form>Qrp_RelAlu008</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu009.pas">
+      <Form>Qrp_RelAlu009</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu010.pas">
+      <Form>Qrp_RelAlu010</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu011.pas">
+      <Form>Qrp_RelAlu011</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu012.pas">
+      <Form>Qrp_RelAlu012</Form>
+    </DCCReference>
+    <DCCReference Include="U_RelAlu013.pas">
+      <Form>Qrp_RelAlu013</Form>
+    </DCCReference>
+    <DCCReference Include="U_RestauraCopia.pas">
+      <Form>Frm_RestauraCopia</Form>
+    </DCCReference>
+    <DCCReference Include="U_SelecionaAlunoMatricula.pas">
+      <Form>Frm_SelecionaAlunoMatricula</Form>
+    </DCCReference>
+    <DCCReference Include="U_SelecionaAlunoMatriculaC.pas">
+      <Form>Frm_SelecionaAlunoMatriculaC</Form>
+    </DCCReference>
+    <DCCReference Include="U_SelecionaBoletim.pas">
+      <Form>Frm_SelecionaBoletim</Form>
+    </DCCReference>
+    <DCCReference Include="U_SelecionaSerieAno.pas">
+      <Form>Frm_SelecionaSerieAno</Form>
+    </DCCReference>
+    <DCCReference Include="U_SOBRE.PAS">
+      <Form>Frm_Sobre</Form>
+    </DCCReference>
+    <DCCReference Include="U_SPLASH.PAS">
+      <Form>Frm_Splash</Form>
+    </DCCReference>
+    <DCCReference Include="U_TbDisciplina.pas">
+      <Form>Frm_TbDisciplina</Form>
+    </DCCReference>
+    <DCCReference Include="U_TbNivelEscolar.pas">
+      <Form>Frm_TbNivelEscolar</Form>
+    </DCCReference>
+    <DCCReference Include="U_TbSerie.pas">
+      <Form>Frm_TbSerie</Form>
+    </DCCReference>
+    <DCCReference Include="U_Usuario.pas">
+      <Form>Frm_Usuario</Form>
+    </DCCReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Borland.Delphi.Targets" />
+</Project>
